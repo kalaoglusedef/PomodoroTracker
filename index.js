@@ -7,6 +7,12 @@ $("#duty").keyup(function (e) {
   }
 });
 
+$("#add").keyup(function (event) {
+  if (event.keyCode == 13) {
+    addList();
+  }
+});
+
 function addList() {
   var duty = $("#duty").val();
   $("#toDoList").show();
